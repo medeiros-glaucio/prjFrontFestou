@@ -1,0 +1,37 @@
+<h1>Cadastro Fornecedor</h1>
+<head>
+    <title>'Cadastro'</title>
+    <link rel="stylesheet" href="cadastro-fornecedor.component.scss">
+</head>
+<body>
+    <mat-card class="card-cadastro-fornecedor">
+        <mat-card-content>
+            <!--
+            <mat-form-field>
+                <mat-label>Id</mat-label>
+                <input matInput [(ngModel)]="fornecedorAtual.id" placeholder="Id">
+            </mat-form-field>
+            -->
+            <mat-form-field>
+                <mat-label>Nome</mat-label>
+                <input matInput [(ngModel)]="fornecedorAtual.nome"><br>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Telefone</mat-label>
+                <input matInput [(ngModel)]="fornecedorAtual.telefone"><br>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Descricao</mat-label>
+                <input matInput [(ngModel)]="fornecedorAtual.descricao"><br>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Preco</mat-label>
+                <input matInput [(ngModel)]="fornecedorAtual.preco"><br>
+            </mat-form-field>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-raised-button (click)="inserirOuAtualizarFornecedor()">{{nomeBotao}}</button>
+        </mat-card-actions>
+    </mat-card>
+</body>

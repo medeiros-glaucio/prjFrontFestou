@@ -1,0 +1,8 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['/cadastrocliente']">Cadastrar Cliente</button>
+  <button mat-menu-item [routerLink]="['/listagemcliente']">Listar Clientes</button>
+  <button mat-menu-item [routerLink]="['/cadastrofornecedor']">Cadastrar Fornecedor</button>
+  <button mat-menu-item [routerLink]="['/listagemfornecedor']">Listar Fornecedor</button>
+</mat-menu>
